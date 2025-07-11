@@ -1,5 +1,6 @@
 const express = require("express")
 const app = express()
+require ("./Connection")
 
 // app.get("/",(req,res)=>{
 //     res.json ({
@@ -56,9 +57,7 @@ app.patch("/books/:id", function(req,res){
 
 })
 
-postgresql://postgresql://postgres.ouoacabjlmfyelpcsrvn:%G28z.sm+x4R.sh@aws-0-ap-south-1.pooler.supabase.com:6543/postgres
-
-
+// app.listen(3000, function(){
 app.listen(3000, function(){
     console.log(" server node has started at port 3000")
 });
